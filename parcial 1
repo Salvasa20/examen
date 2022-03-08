@@ -1,0 +1,52 @@
+ #include <iostream>
+#include"bibloteca1.hpp"
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+using namespace std;
+
+main() {
+	int op, num1, num2;
+	do{
+	cout<<"bienvenido a mi primer parcial"<<endl;
+	cout<<"***** 1.Suma******"<<endl;
+	cout<<"***** 2.Division****"<<endl;
+	cout<<"***** 3.Factorial*****"<<endl;
+	cin>>op;
+	
+	 switch (op){
+	 	
+	 	case 1:
+	 		cout<<"Suma"<<endl;
+	 		cout<<"Ingrese un Digito"<<endl;
+	 		cin>>num1;
+	 		cout<<"Ingrese un digito"<<endl;
+	 		cin>>num2;
+	 		suma(num1,num2);
+	 		cout<<"El resultado es: "<<suma(num1,num2)<<"\n"<<endl;
+	 		break;
+	 	case 2:
+	 		cout<<"Division "<<endl;
+	 		cout<<"Ingrese un Digito"<<endl;
+	 		cin>>num1;
+	 		cout<<"Ingrese un digito"<<endl;
+	 		cin>>num2;
+	 		dividir (num1, num2);
+	 		cout<<"El resultado es: "<<dividir(num1, num2)<<"\n"<<endl;
+	 		break;
+	 	case 3:
+	 		cout<<"Factorial  "<<endl;
+	 		cout<<"Ingrese un Digito"<<endl;
+	 		cin>>num1;
+	 		fact(num1);
+	 		cout<<"El resultado es: "<<fact(num1)<<"\n"<<endl;
+	 		break;
+	 	default:
+	 		cout<<"opcion Invalida "<<endl;
+	 }
+	 system("pause");
+	 system("cls");
+	 
+	}while(op<=3);
+	
+	system("pause");
+	return 0;
+} 
