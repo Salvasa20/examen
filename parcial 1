@@ -50,3 +50,23 @@ main() {
 	system("pause");
 	return 0;
 } 
+
+#include "bibloteca1.hpp"
+int suma (int a, int b){
+	return a+b;
+}
+int dividir(int a, int b){
+	if (a>=b){
+		return a/b;
+	}else 
+	return b/a;
+}
+int fact (int a){
+    if (a<0)return 0;
+	else if(a>1) return a*fact(a-1);
+	return 1;
+	}
+	bibloteca1.cpp
+int suma(int a, int b);
+int dividir(int a, int b);
+int fact (int a);
